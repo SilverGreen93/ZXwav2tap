@@ -1,0 +1,148 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 327, 221
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WAV to TAP Audio files converter for ZX-Spectrum V1.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Settings",IDC_STATIC,5,5,315,190,BS_CENTER
+    GROUPBOX        "Signal durations",IDC_STATIC,10,15,160,175,BS_CENTER
+    EDITTEXT        IDC_EDIT_ZERO_MIN,45,40,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Zero",IDC_STATIC,15,25,145,35,BS_CENTER
+    EDITTEXT        IDC_EDIT_ZERO_MAX,115,40,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CTEXT           "from",IDC_STATIC,20,40,20,15,SS_CENTERIMAGE
+    CTEXT           "to",IDC_STATIC,90,40,20,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ONE_MIN,45,80,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "One",IDC_STATIC,15,65,145,35,BS_CENTER
+    EDITTEXT        IDC_EDIT_ONE_MAX,115,80,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "from",IDC_STATIC,20,80,20,15,SS_CENTERIMAGE
+    CTEXT           "to",IDC_STATIC,90,80,20,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LEAD_MIN,45,120,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "Start tone",IDC_STATIC,15,105,145,35,BS_CENTER
+    EDITTEXT        IDC_EDIT_LEAD_MAX,115,120,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CTEXT           "from",IDC_STATIC,20,120,20,15,SS_CENTERIMAGE
+    CTEXT           "to",IDC_STATIC,90,120,20,15,SS_CENTERIMAGE
+    LTEXT           "Signal durations:\nZero - shortest\nOne - twice as long\nStart tone",
+                    IDC_STATIC,15,145,145,40,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Process uncompressed 44100Hz, 8 bit WAV file and create TAP file",
+                    IDC_BUTTON_CREATE_TAP,5,200,315,14
+    GROUPBOX        "Channels (only for stereo recording)",IDC_STATIC,175,15,
+                    140,45,BS_CENTER
+    CONTROL         "Use the left channel",IDC_CHECK_USE_LEFT_CHANNEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,30,125,10
+    CONTROL         "Use the right channel",IDC_CHECK_USE_RIGHT_CHANNEL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,180,45,125,10
+    GROUPBOX        "Average signal level",IDC_STATIC,175,65,140,125,
+                    BS_CENTER
+    CONTROL         "Manual (0-255)",IDC_RADIO_LEVEL_MANUAL,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFT | BS_VCENTER,180,100,81,10
+    EDITTEXT        IDC_EDIT_LEVEL,265,100,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Auto point evaluation",IDC_RADIO_LEVEL_AUTO,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFT | BS_VCENTER,180,80,83,10
+    EDITTEXT        IDC_EDIT_LEVEL_POINTS,265,80,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "The signal above the middle level is treated like data, all that is lower is ignored. With auto level, 44100 points are analysed and equal to 1 second of recording. Putting over 1000 points is not necessary.",
+                    IDC_STATIC,180,120,130,65,0,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

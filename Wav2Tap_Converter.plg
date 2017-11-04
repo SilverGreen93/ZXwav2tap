@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Wav2Tap_Converter - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP27.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"Release/Wav2Tap_Converter.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\Desktop\Source\cdialog_main.cpp"
+"C:\Documents and Settings\Administrator\Desktop\Source\CTape.cpp"
+"C:\Documents and Settings\Administrator\Desktop\Source\Main.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP27.tmp" 
+Creating command line "link.exe winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/Wav2Tap_Converter.pdb" /machine:I386 /out:"Release/Wav2Tap_Converter.exe"  ".\Release\cdialog_main.obj" ".\Release\CTape.obj" ".\Release\Main.obj" ".\Release\Resource.res" "
+<h3>Output Window</h3>
+Compiling...
+cdialog_main.cpp
+CTape.cpp
+C:\Documents and Settings\Administrator\Desktop\Source\CTape.cpp(189) : warning C4018: '<' : signed/unsigned mismatch
+Main.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Wav2Tap_Converter.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
